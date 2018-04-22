@@ -3,10 +3,14 @@
 def Jetpack_on(event) :
     global gravity
     gravity = 100
+    Can.itemconfigure(Zombie1, image = personnage_1)
     Can.move(Zombie1,0 ,-pas_1)
     Can.pack()
+
+
 global gravity
 gravity = 100
+
 
 def Jetpack_off() :
     global gravity
@@ -27,7 +31,7 @@ def zombie(x, y):
     x = 2.5 + marge + pas_1 * (x - 1)
     y = marge - 3 + pas_2 * (y - 1)
 
-    return Can.create_image(x , y, image = personnage)
+    return Can.create_image(x , y, image = personnage_1)
 
 fen = Tk()
 personnage_1 = PhotoImage(file = "ZombieJetpackon.gif")

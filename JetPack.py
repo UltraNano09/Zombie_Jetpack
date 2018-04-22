@@ -10,6 +10,8 @@ def Jetpack_off(event) :
     Can.pack()
 
 
+
+
 def pions(x, y, color):
     r = 15
 

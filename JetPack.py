@@ -18,6 +18,7 @@ def pions(x, y, color):
 
     return Can.create_oval(x - r, y - r, x + r, y + r, fill = color ,outline = 'black')
 
+
 def zombie(x, y):
 
     x = 2.5 + marge + pas_1 * (x - 1)
